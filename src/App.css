@@ -1,0 +1,132 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #000; /* Uniform black background */
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #141619; /* Dark navbar */
+  z-index: 1000;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Uniform black background */
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.about,
+.market-making,
+.partners,
+.contact {
+  padding: 80px 0;
+  background-color: #000; /* Uniform black background */
+}
+
+.market-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  background-color: #000; /* Uniform black background */
+}
+
+.market-options > div {
+  width: 45%;
+  padding: 20px;
+  background-color: #141619; /* Slightly lighter dark background for cards */
+  border-radius: 10px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #000; /* Uniform black background */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .market-options {
+    flex-direction: column;
+  }
+
+  .market-options > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-list p {
+    margin-bottom: 15px;
+  }
+}

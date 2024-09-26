@@ -1,0 +1,102 @@
+/* About section container */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff; /* White text color */
+}
+
+/* About title styling */
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* About description styling */
+.about-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Stats grid container */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Individual stat item */
+.stat-item {
+  padding: 30px;
+  background-color: #2a2a2a; /* Slightly lighter background for boxes */
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+  border: none;
+}
+
+.stat-item h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #d4af37; /* Gold color for main stats */
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #ddd; /* Light text color */
+}
+
+.stat-item:hover {
+  background: linear-gradient(
+    to bottom,
+    #4a90e2,
+    #f5a623
+  ); /* Gradient background */
+  color: #fff;
+}
+
+.stat-item:hover h2 {
+  color: #fff;
+}
+
+/* Special item for the middle box with gradient background */
+.stat-item.special {
+  background: linear-gradient(
+    to bottom,
+    #4a90e2,
+    #f5a623
+  ); /* Gradient background */
+  color: #fff;
+}
+
+.stat-item.special:hover {
+  background: linear-gradient(to bottom, #f5a623, #4a90e2);
+  color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust to 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr; /* Adjust to 1 column on smaller screens */
+  }
+}

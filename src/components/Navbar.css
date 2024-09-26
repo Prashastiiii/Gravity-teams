@@ -1,0 +1,111 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px 50px;
+  font-family: "Arial", sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s, transform 0.3s; /* Smooth transition */
+  top: 0;
+}
+
+/* Hide the navbar when scrolling down */
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+/* Show the navbar when scrolling up */
+.navbar.visible {
+  transform: translateY(0);
+}
+
+/* Rest of your styles */
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links li a:hover {
+  color: #d4af37;
+}
+
+.services-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #333;
+  border-radius: 5px;
+  top: 30px;
+  list-style: none;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+.services-dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #d4af37;
+}
+
+.get-in-touch {
+  color: black;
+  border: 1px solid #d4af37;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #feb47b, #86e3ce, #009ffd);
+  background-size: 400% 400%;
+  transition: background-position 0.5s, transform 0.3s;
+}
+
+.get-in-touch:hover {
+  background-position: 100% 0;
+  color: #fff;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .get-in-touch {
+    margin-top: 20px;
+  }
+}

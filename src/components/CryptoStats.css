@@ -1,0 +1,54 @@
+/* Main container for stats */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+/* Each stat box */
+.stat-box {
+  flex: 1 1 25%; /* Responsive: Flex-basis is 25%, shrinks or grows accordingly */
+  min-width: 280px;
+  margin: 10px;
+  padding: 30px 20px;
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-10px);
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #999;
+}
+
+/* Highlighted box with gradient */
+.highlight {
+  background: linear-gradient(135deg, #3a3a3a, #f39c12);
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .stat-box {
+    flex: 1 1 45%; /* On tablets, two items per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-box {
+    flex: 1 1 100%; /* On small devices, one item per row */
+  }
+}

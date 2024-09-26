@@ -1,0 +1,90 @@
+.testimonial-container {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.testimonial-header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.testimonial-header p {
+  font-size: 1.1rem;
+  color: #b5b5b5;
+  margin-bottom: 40px;
+}
+
+.testimonial-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #6e97ff;
+  border-radius: 50%;
+  color: #6e97ff;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #6e97ff;
+  color: #fff;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #d9d9d9;
+  margin-bottom: 40px;
+}
+
+.testimonial-author h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.testimonial-author p {
+  font-size: 1rem;
+  color: #999;
+}
+
+.bitkub-logo {
+  width: 80px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-header h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-content {
+    padding: 10px;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}

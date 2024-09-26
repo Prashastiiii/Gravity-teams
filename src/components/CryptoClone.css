@@ -1,0 +1,109 @@
+body {
+  background-color: #0f0f0f;
+  font-family: "Arial", sans-serif;
+  color: #fff;
+}
+
+.crypto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.crypto-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 80%;
+  margin: 40px 0;
+}
+
+.crypto-section .crypto-content {
+  max-width: 50%;
+}
+
+.crypto-section .crypto-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.crypto-section .crypto-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.crypto-section .learn-more {
+  color: #6e97ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.crypto-section .learn-more:hover {
+  text-decoration: underline;
+}
+
+.crypto-section .crypto-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partners-section {
+  text-align: center;
+  padding: 50px 0;
+  width: 80%;
+}
+
+.partners-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partners-logos img {
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.partners-logos img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .crypto-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crypto-section .crypto-content,
+  .crypto-section .crypto-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .crypto-section .crypto-content {
+    margin-bottom: 20px;
+  }
+
+  .partners-logos {
+    flex-direction: column;
+  }
+
+  .partners-logos img {
+    margin-bottom: 20px;
+  }
+}
